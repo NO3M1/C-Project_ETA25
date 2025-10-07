@@ -10,5 +10,6 @@ namespace C_Project_ETA25.Pages;
 public partial class HomePage
 {
     private IWebElement searchBox => _driver.FindElement(By.Id("keyword"));
+    
 
 }

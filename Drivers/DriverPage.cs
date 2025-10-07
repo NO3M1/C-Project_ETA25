@@ -7,10 +7,10 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace C_Project_ETA25.Pages;
-public class TestBasePage 
+namespace C_Project_ETA25.Drivers;
+public class DriverPage 
 {
-    public IWebDriver driver { get; private set; }
+    public IWebDriver driver  { get; private set; }
 
 
     [SetUp]

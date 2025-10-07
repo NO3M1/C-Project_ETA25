@@ -9,11 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Drivers\" />
-    <Folder Include="HelperMethods\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include="Tests\HomePageSearchBoxTest.cs" />
   </ItemGroup>
 
