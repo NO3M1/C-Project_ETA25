@@ -24,10 +24,15 @@ public class LoginPage
     public IWebElement EmailFillIn => _driver.FindElement(By.XPath("//input[@name='email_address']"));
     public IWebElement TelephoneFillIn => _driver.FindElement(By.Id("telephone"));
     public IWebElement AddressFillIn => _driver.FindElement(By.Id("street_address"));
-    public IWebElement JudetDropDown => _driver.FindElement(By.Id("entry_suburb"));  // cluj text
-                                                                                     //public IWebElement TermeniConditiiCheckBox => _driver.FindElement(By.Id("noidea"));
+    public IWebElement JudetDropDown => _driver.FindElement(By.Id("entry_suburb"));  
     public IWebElement termeniiCheckbox => _driver.FindElement(By.XPath("//input[@type='checkbox' and @name='termeni']"));
     public IWebElement SubmitButton => _driver.FindElement(By.XPath("//button[@class='btn btn-special']"));
+
+    public IWebElement NumarTelefon => _driver.FindElement(By.XPath("//input[@name='email_addressx']"));
+    public IWebElement Parola => _driver.FindElement(By.XPath("//input[@name='passwordx']"));
+    public IWebElement ConecteazaTe => _driver.FindElement(By.XPath("//button[normalize-space(text())='Conecteaza-te']"));
+
+
 
     public IWebElement ConecteazaTeCard => GetCard("Conecteaza-te");
     public IWebElement ContNouCard => GetCard("Cont nou");
@@ -56,10 +61,9 @@ public class LoginPage
         iconUser.Click();
         //logInMenuOptions[1].Click();
         AccessUserDropDown(LoginPageOptions.ContNou);
-
-
-
     }
+
+
 
     public void AccessUserDropDown(LoginPageOptions loginPageOptions)
     {
